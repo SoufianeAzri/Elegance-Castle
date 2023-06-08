@@ -1,0 +1,315 @@
+
+.main-logo .logo{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.check{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.check .section-fields{
+    width: 54%;
+}
+.email-input{
+    width: 100%;
+    padding: 20px 0 30px;
+}
+.email-input .text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.email-input .text p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #575757;
+}
+.email-input .text p a{
+    color: #151515;
+}
+.email-input .text h3{
+    color: #575757;
+    font-size: 19px;
+    font-weight: 500;
+}
+.email-input input[type="email"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    outline: none;
+}
+:checked{
+    color: #575757;
+}
+.email-input .check-box{
+    display: flex;
+    align-items: center;
+}
+.email-input .check-box input[type="checkbox"]{
+    padding: 20px;
+    width: 20px;
+    height: 18px;
+    margin-right: 5px;
+}
+.email-input .check-box input[type="checkbox"]:checked{
+    color: #151515;
+}
+.email-input .check-box a{
+    color: #575757;
+}
+.shipping-address h3{
+    color: #575757;
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0 auto 20px;
+}
+.user-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.user-info .first-name,
+.user-info .last-name{
+    width: 49%;
+    margin-bottom: 15px;
+}
+.user-info .first-name input,
+.user-info .last-name input,
+.user-info .code-postal input,
+.user-info .city input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    outline: none;
+}
+.user-info .first-name input:focus,
+.user-info .last-name input:focus,
+.user-info .code-postal input:focus,
+.user-info .city input:focus{
+    border: 1.5px solid #333;
+}
+.address,
+.apartement,
+.phone{
+    margin-bottom: 15px;
+    width: 100%;
+    transition: all 0.3s;
+}
+.address input,
+.apartement input,
+.phone input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+    outline: none;
+}
+.user-info .code-postal,
+.user-info .city{
+    width: 49%;
+    margin-bottom: 15px;
+}
+.address input:focus,
+.apartement input:focus,
+.phone input:focus,
+.email-input input[type="email"]:focus{
+    border: 1.5px solid #333;
+}
+.shipping-actions{
+    padding: 30px 0;
+}
+.shipping-actions .actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shipping-actions .actions .return{
+    color: #333;
+}
+.shipping-actions .actions .return span{
+    margin-right: 10px;
+}
+.shipping-actions .actions .continue{
+    padding: 20px 20px;
+    border: 1px solid #333;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.2s
+}
+.shipping-actions .actions .continue:hover{
+    background-color: #000;
+}
+.section-items{
+    width: 44%;
+    background-color: #cccccc70;
+    padding: 40px 25px;
+}
+.product-card{
+    position: relative;
+}
+.product-card .img-box{
+    padding: 0 10px;
+    background-color: #fff;
+    height: 80px;
+    border-radius: 4px;
+    position: relative;
+}
+.product-card .img-box .quantity{
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    height: 20px;
+    width: 20px;
+    background-color: #808080;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 50%;
+    padding: 2px;
+}
+.product-card .img-box img{
+    width: 65px;
+    object-fit: cover;
+    max-height: 100%;
+}
+.product-card{
+    display: block;
+    margin: 0%;
+}
+.product-card > li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+}
+.product-card .text .sizes{
+    display: flex;
+}
+.product-card .text h5{
+    margin: 0%;
+    height: 30px;
+}
+.product-card .text .sizes li{
+    font-size: 12px;
+    color: #575757;
+}
+.product-card .text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding-left: 13px;
+}
+.product-card .price span{
+    font-size: 14px;
+    font-weight: 700;
+}
+.product-card .text .sizes li:not(:first-child)::before{
+    content: '\/';
+    margin-right: 5px;
+    margin-left: 5px
+}
+.cards-product .products-total{
+    padding: 0;
+}
+.cards-product .product-total,
+.total-result{
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    border-bottom: 1px solid #ccc;
+}
+.cards-product .product-total li,
+.total-result li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total-result h5{
+    color: #333;
+    margin: 0%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.cards-product .product-total li h5{
+    margin: 0%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #575757;
+}
+.cards-product .product-total li:not(:last-child){
+    padding-bottom: 15px;
+}
+.cards-product .product-total li span{
+    font-weight: 600;
+    font-size: 15px;
+}
+.total-result{
+    border: none;
+}
+.total-result .total-price .coin{
+    color: #666;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.total-result .total-price .final-price{
+    font-size: 22px;
+    font-weight: 600;
+}
+.product-card #discription{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 992px) {
+    .check{
+        flex-direction: column;
+    }
+    .section-items{
+        width: 100%;
+        padding: 15px;
+    }
+    .section-fields{
+        width: 100% !important;
+    }
+    .product-card .text h5{
+        height: 20px;
+    }
+    .product-card .text{
+        width: 80%;
+    }
+    .email-input .text {
+        width: 63%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .email-input .text h5{
+        margin: 0%;
+    }
+}
+@media (max-width: 551px) {
+    .product-card .text{
+        width: 70%;
+    }
+}

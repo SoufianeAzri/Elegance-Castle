@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/product-detail.css">
+    <link rel="stylesheet" href="Css/font-awesome.min.css">
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="Css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <title>Cart</title>
+</head>
+<body>
+    <div class="main-body">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li><a href="#" class="black">NEW ARRIVALS</a></li>
+            </ul>
+            <div class="cart-heading">
+                <h1>Your Cart (<span>2</span> Items)</h1>
+            </div>
+            <div class="cart-items">
+                <table class="items-table">
+                    <thead class="cart-header">
+                        <tr>
+                            <th colspan="2" class="cart-header-item">Item</th>
+                            <th class="cart-header-item">Price</th>
+                            <th class="cart-header-item cart-header-quantity">Quantity</th>
+                            <th class="cart-header-item cart-header-total">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="cart-list">
+                        <tr class="cart-item">
+                            <td class="img-content cart-item-block"><img src="/images/guy-2590367_1920.jpg" alt=""></td>
+                            <td class="cart-item-block cart-item-title">
+                                <p class="cart-item-brand">Bohemian Traders</p>
+                                <h4 class="cart-item-name">
+                                    <a href="#">BILLOW SLEEVE MAXI DRESS IN ITALIAN FLORAL</a>
+                                </h4>
+                                <dl class="definitionList">
+                                    <dt class="definitionList-key">Size:</dt>
+                                    <dd class="definitionList-value">M</dd>
+                                </dl>
+                                <a href="#" class="cart-item-change">Change</a>
+                            </td>
+                            <td class="cart-item-block cart-item-info left">
+                                <span class="cart-item-label">PRICE</span>
+                                <span class="cart-item-value">$ 250</span>
+                            </td>
+                            <td class="cart-header-quantity cart-item-info cart-item-block cart-item-quantity">
+                                <span class="cart-item-label">QUANTITY</span>
+                                <a href="#" onclick="incrementQuantity()">+</a>
+                                <input type="text" value="1">
+                                <a href="#" onclick="decrementQuantity()">-</a>
+                            </td>
+                            <td class="cart-header-total cart-item-info cart-item-block cart-item-total">
+                                <span class="cart-item-label">TOTAL</span>
+                                <span class="cart-item-value-span">$ 250</span>
+                                <a href="#">x</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-totals">
+                <ul class="cart-total">
+                    <li>
+                        <div class="cart-total-label"><h5>SUBTOTAL:</h5></div>
+                        <div class="cart-total-value"><span>$ 249</span></div>
+                    </li>
+                    <li>
+                        <div class="cart-total-label"><h5>SHIPPING:</h5></div>
+                        <div class="cart-total-value"><a href="#">ADD INFO</a></div>
+                    </li>
+                    <li>
+                        <div class="cart-total-label"><h5>GIFT CERTIFICATE:</h5></div>
+                        <div class="cart-total-value"><a href="#">GIFT CERTIFICATE</a></div>
+                    </li>
+                    <li>
+                        <div class="cart-total-label"><h5>GRAND TOTAL</h5></div>
+                        <div class="cart-total-value"><span>$ 249</span></div>
+                    </li>
+                </ul>
+                <div class="cart-check">
+                    <a href="#">CHECK OUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
